@@ -45,12 +45,12 @@
       "path": "lang/pl.json"
     }
   ],
-  "url": "https://github.com/shemetz/pf2e-extempore-effects",
-  "manifest": "https://github.com/shemetz/pf2e-extempore-effects/raw/master/module.json",
-  "download": "https://github.com/shemetz/pf2e-extempore-effects/archive/master.zip",
-  "readme": "https://github.com/shemetz/pf2e-extempore-effects/blob/master/Readme.md",
-  "changelog": "https://github.com/shemetz/pf2e-extempore-effects/blob/master/Changelog.md",
-  "license": "https://github.com/shemetz/pf2e-extempore-effects/blob/master/License.txt",
+  "url": "https://github.com/TheGoodwin/pf2e-extempore-effects",
+  "manifest": "https://raw.githubusercontent.com/TheGoodwin/pf2e-extempore-effects/release/v1.8.3/module.json",
+  "download": "https://github.com/TheGoodwin/pf2e-extempore-effects/archive/refs/tags/v1.8.3.zip",
+  "readme": "https://raw.githubusercontent.com/TheGoodwin/pf2e-extempore-effects/release/v1.8.3/Readme.md",
+  "changelog": "https://raw.githubusercontent.com/TheGoodwin/pf2e-extempore-effects/release/v1.8.3/Changelog.md",
+  "license": "https://raw.githubusercontent.com/TheGoodwin/pf2e-extempore-effects/release/v1.8.3/License.txt",
   "bugs": "https://github.com/shemetz/pf2e-extempore-effects/issues",
   "relationships": {
     "systems": [
