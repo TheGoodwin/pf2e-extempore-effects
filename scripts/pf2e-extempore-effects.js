@@ -354,7 +354,7 @@ const _getEntryContextOptions_Wrapper = (wrapped) => {
   return buttons
 }
 
-function messageGetOriginUuid (message) {
+function messageGetOriginUuid(message) {
   let uuid = message.getFlag('pf2e', 'origin')?.uuid
   if (!uuid) {
     return null
@@ -366,7 +366,7 @@ function messageGetOriginUuid (message) {
   return uuid
 }
 
-function fromUuidNonAsync (uuid) {
+function fromUuidNonAsync(uuid) {
   let parts = uuid.split('.')
   let doc
 
@@ -392,7 +392,7 @@ function fromUuidNonAsync (uuid) {
   return doc || null
 }
 
-function defineDurationFromFrequency (frequency) {
+function defineDurationFromFrequency(frequency) {
   let durationValue, durationUnit, durationSustained = false
   const turnStartOrTurnEnd = 'turn-start'
   switch (frequency.per) {
@@ -428,7 +428,7 @@ const defineDurationFromTextOfAffliction = (itemDescriptionText) => {
   // an affliction effect's duration is the duration of its first stage!
   const firstStageDurationMatch = itemDescriptionText
     // example: '<p><strong>Stage 1</strong> carrier with no ill effect (1 minute)</p>'
-    .match(/<p>\s*<strong>\s*Stage \d+<\/strong> .+? \((.+)\)\s*<\/p>/)
+    .match(/<p>\s*<strong>\s*Stade \d+<\/strong> .+? \((.+)\)\s*<\/p>/)
   const maximumDurationMatch = itemDescriptionText
     // example: '<p><strong>Maximum Duration</strong> 6 rounds</p>'
     .match(/<p>\s*<strong>\s*Maximum Duration<\/strong> (\d+ rounds?)\s*<\/p>/)
@@ -514,7 +514,7 @@ const isEffectOrCondition = (document) => {
 }
 
 const isAffliction = (itemDescriptionText) => {
-  return itemDescriptionText.match(/<strong>Stage \d+/)
+  return itemDescriptionText.match(/<strong>Stade \d+/)
 }
 
 const isRechargeRoll = (message) => {
@@ -522,7 +522,7 @@ const isRechargeRoll = (message) => {
 }
 
 const calcHighestStageOfAffliction = (itemDescriptionText) => {
-  const stageNumbers = [...itemDescriptionText.matchAll(/[Ss]tage (\d+)/g)].map(m => m[1]).
+  const stageNumbers = [...itemDescriptionText.matchAll(/[Ss]tade (\d+)/g)].map(m => m[1]).
     map(numStr => parseInt(numStr))
   return Math.max(...stageNumbers)
 }
